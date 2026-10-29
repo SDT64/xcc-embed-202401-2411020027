@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"0602_matrixkey\startup_stm32f407xx.o"
+"0602_matrixkey\main.o"
+"0602_matrixkey\gpio.o"
+"0602_matrixkey\stm32f4xx_it.o"
+"0602_matrixkey\stm32f4xx_hal_msp.o"
+"0602_matrixkey\stm32f4xx_hal_rcc.o"
+"0602_matrixkey\stm32f4xx_hal_rcc_ex.o"
+"0602_matrixkey\stm32f4xx_hal_flash.o"
+"0602_matrixkey\stm32f4xx_hal_flash_ex.o"
+"0602_matrixkey\stm32f4xx_hal_flash_ramfunc.o"
+"0602_matrixkey\stm32f4xx_hal_gpio.o"
+"0602_matrixkey\stm32f4xx_hal_dma_ex.o"
+"0602_matrixkey\stm32f4xx_hal_dma.o"
+"0602_matrixkey\stm32f4xx_hal_pwr.o"
+"0602_matrixkey\stm32f4xx_hal_pwr_ex.o"
+"0602_matrixkey\stm32f4xx_hal_cortex.o"
+"0602_matrixkey\stm32f4xx_hal.o"
+"0602_matrixkey\stm32f4xx_hal_exti.o"
+"0602_matrixkey\system_stm32f4xx.o"
+"0602_matrixkey\key.o"
+"0602_matrixkey\led.o"
+--strict --scatter "0602_MatrixKey\0602_MatrixKey.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "0602_MatrixKey.map" -o 0602_MatrixKey\0602_MatrixKey.axf
